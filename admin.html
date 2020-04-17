@@ -20,13 +20,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./fontawesome-free-5.13.0-web/css/all.css" />
         <link rel="stylesheet" href="./css/main.css">
-        <link rel="stylesheet" href="./fontawesome-free-5.13.0-web/css/all.css">
+        <!-- <link rel="stylesheet" href="./fontawesome-free-5.13.0-web/css/all.css"> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>AWLO COMMS PORTAL</title>
     </head>
 
     <body>
 
-        <nav class="navbar navbar-expand-lg bg-dark">
+        <nav class="navbar navbar-expand-lg" id="bgthingsNav">
             <a href=""><img src="./images/awloimg.png" width="30" height="30" alt="company logo"
                     class="rounded mx-auto d-block"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -102,11 +103,12 @@
                                 <h3><small>Johnkelly E.</small></h3>
                             </div>
                         </div>
-                        <div class="list-group">
-                            <a href="#" class="list-group-item list-group-item-action active">
-                                Dashboard
+                        <div class="list-group" id="mainColorhead">
+                            <a href="#" class="list-group-item list-group-item-action active colorAm">
+                                <span class="fas fa-cog" style="color:white"> Dashboard
                             </a>
-                            <a href="#" class="list-group-item list-group-item-action">Edit profile</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="far fa-edit"></i></span>Edit profile</a>
                             <a href="#" class="list-group-item list-group-item-action">Email</a>
                             <a href="#" class="list-group-item list-group-item-action">SMS</a>
                             <a href="#" class="list-group-item list-group-item-action">Users</a>

@@ -74,3 +74,8 @@
 .imgPhoto img {
     border-radius: 50px;
 }
+
+#mainColorhead .colorAm,
+#bgthingsNav {
+    background-color: rgb(19, 134, 151);
+}
