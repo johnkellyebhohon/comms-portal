@@ -1,3 +1,4 @@
+/* navlink style */
 .nav-item .nav-link {
     color: rgb(240, 238, 238);
 }
@@ -21,4 +22,30 @@
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
     }
+}
+
+/* header styleing */
+.headerC1 h3 small {
+    color: grey;
+}
+
+.headerC1 .fas {
+    padding-right: 5px;
+}
+
+#header {
+    background-color: #333333;
+    color: #fff;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+#header .create {
+    padding-bottom: 10px;
+}
+
+#header .create .btn {
+    background-color: transparent;
+    color: #fff;
 }
