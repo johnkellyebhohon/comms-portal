@@ -1,3 +1,12 @@
+.nav-item .nav-link {
+    color: rgb(240, 238, 238);
+}
+
+.nav-item .nav-link:hover {
+    color: rgb(170, 167, 167);
+}
+
+
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -6,6 +15,7 @@
     -ms-user-select: none;
     user-select: none;
 }
+
 
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
