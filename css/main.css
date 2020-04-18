@@ -1,3 +1,7 @@
+body {
+    background: #f4f4f4;
+}
+
 /* navlink style */
 .nav-item .nav-link {
     color: rgb(240, 238, 238);
@@ -75,7 +79,19 @@
     border-radius: 50px;
 }
 
-#mainColorhead .colorAm,
 #bgthingsNav {
     background-color: rgb(19, 134, 151);
+}
+
+#mainColorhead .colorAm,
+.progress-bar {
+    background: rgb(23, 162, 184)
+}
+
+.well {
+    margin-top: 8px;
+    border-radius: 5px;
+    padding: 8px 12px 12px 12px;
+    background: #fff;
+    border: 1px solid #e7e7e7;
 }
