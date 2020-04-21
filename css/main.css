@@ -1,5 +1,6 @@
 body {
     background: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* navlink style */
@@ -28,30 +29,11 @@ body {
     }
 }
 
-/* header styleing */
-.headerC1 h3 small {
-    color: grey;
-}
-
-.headerC1 .fas {
-    padding-right: 5px;
-}
-
-#header {
-    background-color: #333333;
-    color: #fff;
-    padding-top: 10px;
-    margin-bottom: 15px;
-    color: white;
-}
-
-#header .create {
-    padding-bottom: 10px;
-}
-
-#header .create .btn {
-    background-color: transparent;
-    color: #fff;
+/* HEADER  */
+.space {
+    height: 5px;
+    background-color: #000;
+    margin-bottom: 20px
 }
 
 /* section breadcrumb */
@@ -59,7 +41,6 @@ body {
     background-color: #cccccc;
     color: #333333;
 }
-
 .breadcrumb o {
     color: #333;
 }
@@ -138,6 +119,9 @@ body {
 .panel-body .container {
     padding-bottom: 15px;
     padding-top: 5px;
+}
+.panel-heading h3{
+    margin-left: 5px;
 }
 
 /* second panel thing  */
