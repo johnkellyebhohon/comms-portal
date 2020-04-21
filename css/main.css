@@ -154,3 +154,12 @@ body {
 table tr {
     border-top: none;
 }
+
+/* EMAIL PAGE  */
+
+#formemail {
+    margin:5px 5px 5px 5px;
+    border:1px solid #e7e7e7;
+    padding:15px;
+    border-radius: 2px;;
+}
