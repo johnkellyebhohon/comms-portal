@@ -109,6 +109,11 @@
                         <a href="#" class="list-group-item list-group-item-action editProfile">
                             <span class="far fa-edit "></span>Edit profile
                         </a>
+                        <a href="sms.html" class="list-group-item list-group-item-action ">
+                            <span class="far fa-file-alt"></span>
+                            My Info
+
+                        </a>
                         <a href="emailadmin.html" class="list-group-item list-group-item-action">
                             <span class="fas fa-envelope-square"></span>
                             Email
@@ -120,11 +125,7 @@
                             SMS
                             <span class="badge float-right">12</span>
                         </a>
-                        <a href="sms.html" class="list-group-item list-group-item-action">
-                            <span class="far fa-info"></span>
-                            My Info
-                            <span class="badge float-right">12</span>
-                        </a>
+
                         <a href="#" class="list-group-item list-group-item-action">
                             <span class="fas fa-users"></span>
                             Users
@@ -226,8 +227,93 @@
                             </div>
                         </div>
                     </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Stats</h3>
+                        </div>
+
+                        <!-- text and email nav  -->
+                        <div class="panel-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class=" col-sm-12 col-md-12 col-lg-12">
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home"
+                                                    role="tab" aria-controls="home" aria-selected="true">Email</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile"
+                                                    role="tab" aria-controls="profile" aria-selected="false">SMS</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                                aria-labelledby="home-tab">
+                                                <!-- EMAIL  -->
+                                                <div class="container">
+                                                    <form id="formemail">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" id="subjectMsg1"
+                                                                placeholder="Subject">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <select class="custom-select">
+                                                                <option selected>Email to?</option>
+                                                                <option value="1">Benson Imoh</option>
+                                                                <option value="2">Johnkelly Ebhohon</option>
+                                                                <option value="3">Ayanime</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="md-form">
+                                                            <i class="fas fa-pencil-alt prefix"></i>
+                                                            <textarea id="form7" class="md-textarea form-control"
+                                                                rows="5" placeholder="Email content"></textarea>
+
+                                                        </div>
+                                                        <div class="form-group form-check"></div>
+                                                        <button type="submit" class="btn btn-primary">Send</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <!-- SMS  -->
+                                            <div class="tab-pane fade" id="profile" role="tabpanel"
+                                                aria-labelledby="profile-tab">
+                                                <div class="container">
+                                                    <form id="formemail">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" id="senderMsg1"
+                                                                placeholder="Sender's Name">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <select class="custom-select">
+                                                                <option selected>SMS to?</option>
+                                                                <option value="1">Benson Imoh</option>
+                                                                <option value="2">Johnkelly Ebhohon</option>
+                                                                <option value="3">Ayanime</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="md-form">
+                                                            <i class="fas fa-pencil-alt prefix"></i>
+                                                            <textarea id="form7" class="md-textarea form-control"
+                                                                rows="5" placeholder="SMS content"></textarea>
+
+                                                        </div>
+                                                        <div class="form-group form-check"></div>
+                                                        <button type="submit" class="btn btn-primary">Send</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
