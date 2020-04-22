@@ -3,6 +3,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+#loginCenter {
+    margin-top: 70px;
+}
+
 /* navlink style */
 .nav-item .nav-link {
     color: rgb(240, 238, 238);
