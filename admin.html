@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.ckeditor.com/ckeditor5/18.0.0/classic/ckeditor.js"></script>
     <title>AWLO COMMS PORTAL</title>
 </head>
 
@@ -52,10 +53,10 @@
                     <a class="nav-link" href="register.html">Register</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
+                    <a class="nav-link" href="index.html">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">Logout</a>
+                    <a class="nav-link" href="index.html">Logout</a>
                 </li>
                 <div class="container">
                     <li class="nav-item">
@@ -142,81 +143,81 @@
                         </div>
                         <!-- text and email nav  -->
                         <div class="panel-body">
-                            <div class="container">
-                                <div class="row">
-                                    <div class=" col-sm-12 col-md-12 col-lg-12">
-                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                            <li class="nav-item">
-                                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home"
-                                                    role="tab" aria-controls="home" aria-selected="true">Email</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile"
-                                                    role="tab" aria-controls="profile" aria-selected="false">SMS</a>
-                                            </li>
-                                        </ul>
-                                        <div class="tab-content" id="myTabContent">
-                                            <div class="tab-pane fade show active" id="home" role="tabpanel"
-                                                aria-labelledby="home-tab">
-                                                <!-- EMAIL  -->
-                                                <div class="container">
-                                                    <form id="formemail">
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-control" id="subjectMsg1"
-                                                                placeholder="Subject">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <select class="custom-select">
-                                                                <option selected>Email to?</option>
-                                                                <option value="1">Benson Imoh</option>
-                                                                <option value="2">Johnkelly Ebhohon</option>
-                                                                <option value="3">Ayanime</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="md-form">
-                                                            <i class="fas fa-pencil-alt prefix"></i>
-                                                            <textarea id="form7" class="md-textarea form-control"
-                                                                rows="5" placeholder="Email content"></textarea>
+                            <!-- <div class="container"> -->
+                            <div class="row">
+                                <div class=" col-sm-12 col-md-12 col-lg-12">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home"
+                                                role="tab" aria-controls="home" aria-selected="true">Email</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile"
+                                                role="tab" aria-controls="profile" aria-selected="false">SMS</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                            aria-labelledby="home-tab">
+                                            <!-- EMAIL  -->
+                                            <div class="container">
+                                                <form id="formemail">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="subjectMsg1"
+                                                            placeholder="Subject">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <select class="custom-select">
+                                                            <option selected>Email to?</option>
+                                                            <option value="1">Benson Imoh</option>
+                                                            <option value="2">Johnkelly Ebhohon</option>
+                                                            <option value="3">Ayanime</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="md-form">
+                                                        <i class="fas fa-pencil-alt prefix"></i>
+                                                        <textarea id="form7" class="md-textarea form-control" rows="5"
+                                                            placeholder="Email content"></textarea>
 
-                                                        </div>
-                                                        <div class="form-group form-check"></div>
-                                                        <button type="submit" class="btn btn-primary">Send</button>
-                                                    </form>
-                                                </div>
+                                                    </div>
+                                                    <div class="form-group form-check"></div>
+                                                    <button type="submit" class="btn btn-primary">Send</button>
+                                                </form>
                                             </div>
-                                            <!-- SMS  -->
-                                            <div class="tab-pane fade" id="profile" role="tabpanel"
-                                                aria-labelledby="profile-tab">
-                                                <div class="container">
-                                                    <form id="formemail">
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-control" id="senderMsg1"
-                                                                placeholder="Sender's Name">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <select class="custom-select">
-                                                                <option selected>SMS to?</option>
-                                                                <option value="1">Benson Imoh</option>
-                                                                <option value="2">Johnkelly Ebhohon</option>
-                                                                <option value="3">Ayanime</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="md-form">
-                                                            <i class="fas fa-pencil-alt prefix"></i>
-                                                            <textarea id="form7" class="md-textarea form-control"
-                                                                rows="5" placeholder="SMS content"></textarea>
-
-                                                        </div>
-                                                        <div class="form-group form-check"></div>
-                                                        <button type="submit" class="btn btn-primary">Send</button>
-                                                    </form>
-                                                </div>
-                                            </div>
-
                                         </div>
+                                        <!-- SMS  -->
+                                        <div class="tab-pane fade" id="profile" role="tabpanel"
+                                            aria-labelledby="profile-tab">
+                                            <div class="container">
+                                                <form id="formemail">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="senderMsg1"
+                                                            placeholder="Sender's Name">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <select class="custom-select">
+                                                            <option selected>SMS to?</option>
+                                                            <option value="1">Benson Imoh</option>
+                                                            <option value="2">Johnkelly Ebhohon</option>
+                                                            <option value="3">Ayanime</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="md-form">
+                                                        <i class="fas fa-pencil-alt prefix"></i>
+                                                        <textarea id="form8" class="md-textarea form-control" rows="5"
+                                                            placeholder="SMS content"></textarea>
+
+                                                    </div>
+                                                    <div class="form-group form-check"></div>
+                                                    <button type="submit" class="btn btn-primary">Send</button>
+                                                </form>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
+                            <!-- </div> -->
                         </div>
                     </div>
 
@@ -229,7 +230,7 @@
                             <div class="container">
                                 <div class="row">
                                     <div class=" col-sm-6 col-md-3 col-lg-3">
-                                        <div class="well">
+                                        <div class="well wella">
                                             <h3>
                                                 <span class="fas fa-user-alt"></span>
                                                 13</h3>
@@ -237,7 +238,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-6 col-md-3 col-lg-3">
-                                        <div class="well">
+                                        <div class="well wella">
                                             <h3>
                                                 <span class="far fa-thumbs-up"></span>
                                                 </span>
@@ -246,7 +247,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-6 col-md-3 col-lg-3 ">
-                                        <div class="well">
+                                        <div class="well wella">
                                             <h3>
                                                 <span class="fas fa-sign-in-alt"></span>
                                                 4</h3>
@@ -254,7 +255,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-6 col-md-3 col-lg-3 ">
-                                        <div class="well">
+                                        <div class="well wella">
                                             <h3>
                                                 <span class="fas fa-signal"></span>
                                                 1</h3>
@@ -314,54 +315,13 @@
         </div>
     </section>
 
-    <!-- modal addpage -->
+    <!-- footer  -->
 
-    <div class="modal fade" id="addPage" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label>Page Title</label>
-                            <input type="text" class="form-control" id="textNow" placeholder="pPage Title">
-                        </div>
-                        <div class="form-group">
-                            <label>Page Title</label>
-                            <texarea name="editorial1" class="form-control" placeholder="Page Body">
-                            </texarea>
-                        </div>
-                        <div type="checkbox">
-
-                            <label for="">
-                                <input type="checkbox">
-                                Published
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label>Meta data</label>
-                            <input type="text" class="form-group" placeholder="Add some tags...">
-                        </div>
-                        <div class="form-group">
-                            <label>Meta Description</label>
-                            <input type="text" class="form-group" placeholder="Add meta description...">
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <footer id="footer">
+        <p>
+            copyright AWLO comms portal. &copy; 2020
+        </p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
@@ -371,6 +331,19 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#form7'))
+            .catch(error => {
+                console.error(error);
+            });
+
+        ClassicEditor
+            .create(document.querySelector('#form8'))
+            .catch(error => {
+                console.error(error);
+            });
     </script>
 </body>
 
