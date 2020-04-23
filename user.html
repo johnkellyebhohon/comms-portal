@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.ckeditor.com/ckeditor5/18.0.0/classic/ckeditor.js"></script>
     <title>AWLO COMMS PORTAL</title>
 </head>
 
@@ -52,22 +53,22 @@
                     <a class="nav-link" href="register.html">Register</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
+                    <a class="nav-link" href="index.html">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">Logout</a>
+                    <a class="nav-link" href="index.html">Logout</a>
                 </li>
                 <div class="container">
                     <li class="nav-item">
-                        <a class="nav-link" href="email.html">
+                        <a class="nav-link" href="emailadmin.html">
                             <i class="fas fa-envelope-open-text">
-                                Email</i>
+                            </i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="sms.html">
+                        <a class="nav-link" href="smsadmin.html">
                             <i class="fas fa-sms">
-                                SMS</i>
+                            </i>
                         </a>
                     </li>
                 </div>
@@ -75,16 +76,14 @@
 
         </div>
     </nav>
-
     <header id="header">
         <div class="space"></div>
     </header>
-
     <section id="breadcrumb">
         <div class="container">
             <ol class="breadcrumb">
                 <li><a href="index.html">Home</a></li>
-                <li class="active">SMS</li>
+                <li class="active">User</li>
             </ol>
         </div>
     </section>
@@ -92,7 +91,7 @@
     <section id="main">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-3 col-lg-3">
+                <div class="col-sm-12 col-md-3 col-lg-3" id="userBottom">
                     <div class="row imgPhoto">
                         <div class="col-3">
                             <img src="./images/Voice2one.jpeg" width="40" height="40" alt="personal image" class="">
@@ -112,69 +111,95 @@
                         <a href="#" class="list-group-item list-group-item-action editProfile">
                             <span class="far fa-edit "></span>Edit profile
                         </a>
-                        <a href="#" class="list-group-item list-group-item-action">
+                        <a href="#" class="list-group-item list-group-item-action ">
                             <span class="far fa-file-alt"></span>
                             My Info
+
                         </a>
-                        <a href="email.html" class="list-group-item list-group-item-action">
+                        <a href="emailadmin.html" class="list-group-item list-group-item-action">
                             <span class="fas fa-envelope-square"></span>
                             Email
 
                             <span class="badge float-right">5</span>
                         </a>
-                        <a href="sms.html" class="list-group-item list-group-item-action">
+                        <a href="smsadmin.html" class="list-group-item list-group-item-action">
                             <span class="far fa-file-alt"></span>
                             SMS
                             <span class="badge float-right">12</span>
                         </a>
 
+                        <a href="user.html" class="list-group-item list-group-item-action">
+                            <span class="fas fa-users"></span>
+                            Users
+                            <span class="badge float-right">13</span>
+                        </a>
                     </div>
-
                 </div>
-                <div class="col-sm-12 col-md-9 col-lg-9">
-                    <div class="panel panel-default">
+
+                <!-- users lates -->
+                <div class="col-sm-12 col-md-3 col-lg-9" id="">
+
+                    <div class="panel panel-default" id="">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Send SMS Messages
+                            <h3 class="panel-title">
+                                Latest users
                             </h3>
                         </div>
-                        <div class="panel-body" id="panel2b">
-                            <div class="container">
-                                <form id="formemail">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="senderMsg1"
-                                            placeholder="Sender's Name">
-                                    </div>
-                                    <div class="form-group">
-                                        <select class="custom-select">
-                                            <option selected>SMS to?</option>
-                                            <option value="1">Benson Imoh</option>
-                                            <option value="2">Johnkelly Ebhohon</option>
-                                            <option value="3">Ayanime</option>
-                                        </select>
-                                    </div>
-                                    <div class="md-form">
-                                        <i class="fas fa-pencil-alt prefix"></i>
-                                        <textarea id="form7" class="md-textarea form-control" rows="5"
-                                            placeholder="SMS content"></textarea>
-
-                                    </div>
-                                    <div class="form-group form-check"></div>
-                                    <button type="submit" class="btn btn-primary">Send</button>
-                                </form>
+                        <div class="panel-body secondbodyp">
+                            <div class="well" id="wellztable">
+                                <table class="table table-striped table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">User</th>
+                                            <th scope="col">Date Added</th>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">johnkelly</th>
+                                            <td>Jan 2020</td>
+                                            <td>johnkelly@gmail.com</td>
+                                            <td><a href="" class="greenA"> <i class="fas fa-check"></i></a>
+                                                <a href="" class="redA"> <i class="fas fa-trash-alt"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Ayanime</th>
+                                            <td>Feb 2020</td>
+                                            <td>ayanime@gmail.com</td>
+                                            <td><a href="" class="greenA"> <i class="fas fa-check"></i></a>
+                                                <a href="" class="redA"> <i class="fas fa-trash-alt"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Benson</th>
+                                            <td>Mar 2020</td>
+                                            <td>benson@gmail.com</td>
+                                            <td><a href="" class="greenA"> <i class="fas fa-check"></i></a>
+                                                <a href="" class="redA"> <i class="fas fa-trash-alt"></i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- users lates  -->
 
+                </div>
+            </div>
+        </div>
+        </div>
     </section>
+
+    <!-- footer  -->
 
     <footer id="footer">
         <p>
             copyright AWLO comms portal. &copy; 2020
         </p>
     </footer>
-
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
@@ -185,10 +210,22 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#form7'))
+            .catch(error => {
+                console.error(error);
+            });
+
+        ClassicEditor
+            .create(document.querySelector('#form8'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
 </body>
 
 </html>
-</body>
 </body>
 
 </html>

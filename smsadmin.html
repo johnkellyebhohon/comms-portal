@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.ckeditor.com/ckeditor5/18.0.0/classic/ckeditor.js"></script>
     <title>AWLO COMMS PORTAL</title>
 </head>
 
@@ -83,7 +84,8 @@
     <section id="breadcrumb">
         <div class="container">
             <ol class="breadcrumb">
-                <li class="active">Dashboard</li>
+                <li><a href="index.html">Home</a></li>
+                <li class="active">SMS</li>
             </ol>
         </div>
     </section>
@@ -165,7 +167,7 @@
                                     </div>
                                     <div class="md-form">
                                         <i class="fas fa-pencil-alt prefix"></i>
-                                        <textarea id="form7" class="md-textarea form-control" rows="5"
+                                        <textarea id="form12" class="md-textarea form-control" rows="5"
                                             placeholder="SMS content"></textarea>
 
                                     </div>
@@ -180,53 +182,11 @@
 
     </section>
 
-    <!-- modal addpage -->
-
-    <div class="modal fade" id="addPage" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label>Page Title</label>
-                            <input type="text" class="form-control" id="textNow" placeholder="pPage Title">
-                        </div>
-                        <div class="form-group">
-                            <label>Page Title</label>
-                            <texarea name="editorial1" class="form-control" placeholder="Page Body"></texarea>
-                        </div>
-                        <div type="checkbox">
-
-                            <label for="">
-                                <input type="checkbox">
-                                Published
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label>Meta data</label>
-                            <input type="text" class="form-group" placeholder="Add some tags...">
-                        </div>
-                        <div class="form-group">
-                            <label>Meta Description</label>
-                            <input type="text" class="form-group" placeholder="Add meta description...">
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <footer id="footer">
+        <p>
+            copyright AWLO comms portal. &copy; 2020
+        </p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
@@ -236,6 +196,13 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#form12'))
+            .catch(error => {
+                console.error(error);
+            });
     </script>
 </body>
 
