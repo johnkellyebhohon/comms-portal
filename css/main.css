@@ -172,6 +172,8 @@ footer {
     color: #fff;
     padding: 25px;
     margin-top: 30px;
+    margin-bottom: 0;
+
 }
 
 .breadcrumb li {
@@ -184,5 +186,5 @@ footer {
 
 .greenA {
     color: green;
-    padding-right: 5px;
+    padding-right: 2px;
 }
