@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.ckeditor.com/ckeditor5/18.0.0/classic/ckeditor.js"></script>
     <title>AWLO COMMS PORTAL</title>
 </head>
 
@@ -152,7 +153,7 @@
                                     </div>
                                     <div class="md-form">
                                         <i class="fas fa-pencil-alt prefix"></i>
-                                        <textarea id="form7" class="md-textarea form-control" rows="5"
+                                        <textarea id="form9" class="md-textarea form-control" rows="5"
                                             placeholder="Email content"></textarea>
 
                                     </div>
@@ -167,7 +168,12 @@
 
     </section>
 
-    <!-- modal addpage -->
+    <!-- footer  -->
+    <footer id="footer">
+        <p>
+            copyright AWLO comms portal. &copy; 2020
+        </p>
+    </footer>
 
 
 
@@ -179,6 +185,13 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#form9'))
+            .catch(error => {
+                console.error(error);
+            });
     </script>
 </body>
 
