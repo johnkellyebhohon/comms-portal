@@ -4,7 +4,11 @@ body {
 }
 
 #loginCenter {
-    margin-top: 70px;
+    margin-top: 60px;
+}
+
+.btnOnHome {
+    margin-top: 20px;
 }
 
 /* navlink style */
@@ -166,14 +170,20 @@ table tr {
 
 /* FOORTER  */
 
-footer {
+.footer {
     background: rgb(10, 69, 78);
     text-align: center;
     color: #fff;
     padding: 25px;
-    margin-top: 30px;
     margin-bottom: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 
+.footer p {
+    margin-bottom: 0;
+    ;
 }
 
 .breadcrumb li {
