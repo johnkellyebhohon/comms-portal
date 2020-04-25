@@ -4,7 +4,7 @@ body {
 }
 
 #loginCenter {
-    margin-top: 90px;
+    margin-top: 50px;
 }
 
 .form-signin {
@@ -49,11 +49,7 @@ body {
 }
 
 /* HEADER  */
-.space {
-    height: 5px;
-    background-color: #000;
-    margin-bottom: 20px
-}
+
 
 /* section breadcrumb */
 .breadcrumb {
@@ -190,6 +186,7 @@ table tr {
     position: fixed;
     bottom: 0;
     width: 100%;
+    margin-top: 40px;
 }
 
 .footer p {
@@ -214,3 +211,4 @@ table tr {
     background: rgb(23, 162, 184);
     border: none;
 }
+
