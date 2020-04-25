@@ -4,7 +4,14 @@ body {
 }
 
 #loginCenter {
-    margin-top: 70px;
+    margin-top: 90px;
+}
+
+.form-signin {
+    border: 1px solid #e7e7e7;
+    padding: 20px 20px 40px 20px;
+    box-shadow: 0px 0px 2px #cdcde7;
+
 }
 
 .btnOnHome {
@@ -30,6 +37,10 @@ body {
     user-select: none;
 }
 
+.goCent {
+    margin-bottom: 0;
+    ;
+}
 
 @media(min-width: 768px) {
     .bd-placeholder-img-lg {
