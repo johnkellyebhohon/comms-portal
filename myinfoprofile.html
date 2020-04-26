@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.ckeditor.com/ckeditor5/18.0.0/classic/ckeditor.js"></script>
     <title>AWLO COMMS PORTAL</title>
 </head>
 
@@ -41,56 +43,151 @@
                     <a class="nav-link" href="register.html">Register</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
+                    <a class="nav-link" href="index.html">Login</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="logout.html">Logout</a>
                 </li>
-
             </ul>
 
         </div>
     </nav>
+    <header id="header">
+        <div class="space"></div>
+    </header>
+    <section id="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="admin.html">Profile</a></li>
+                <li class="active">My Info</li>
+            </ol>
+        </div>
+    </section>
 
-    <div class="container">
-        <div class="row justify-content-center " id="loginCenter">
-            <div class="col-sm-6 col-md-6 col-lg-3">
-                <form class="form-signin text-center">
-                    <img class="mb-4" src="./images/awloimg.png" alt="" width="72" height="72">
-                    <h1 class="h3 mb-3 font-weight-normal">Login</h1>
-                    <label for="inputEmail" class="sr-only">Email address</label>
-                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required
-                        autofocus>
-                    <label for="inputPassword" class="sr-only">Password</label>
-                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                    <div class="checkbox mb-3">
-                        <button class="btn btn-lg btn-primary btn-block btnOnHome" type="submit">Sign in
-                            <i class="fas fa-sign-in-alt"></i>
-                            </span>
-                        </button>
-                        <label>
-                            <input type="checkbox" value="remember-me">
-                            Remember me
-                        </label>
-                        <span>
-                            <a href="register.html" class="regNow">Register</a>
-                        </span>
+    <section id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 col-lg-3" id="userBottom">
+                    <div class="row imgPhoto">
+                        <div class="col-3">
+                            <img src="./images/Voice2one.jpeg" width="40" height="40" alt="personal image" class="">
+                        </div>
+                        <div class="col-9">
+                            <h3>
+                                <small>Johnkelly E.</small>
+                            </h3>
+                        </div>
                     </div>
+                    <div class="list-group" id="mainColorhead">
+                        <a href="#" class="list-group-item list-group-item-action active colorAm">
+                            <Edit class="fas fa-cog" style="color:white">
+                                Dashboard
 
-                </form>
+                        </a>
+                        <a href="myinfoprofile.html" class="list-group-item list-group-item-action editProfile">
+                            <span class="far fa-edit"></span>My Info
+                        </a>
+                        <a href="email.html" class="list-group-item list-group-item-action">
+                            <span class="fas fa-envelope-square"></span>
+                            Email
+
+                            <span class="badge float-right">5</span>
+                        </a>
+                        <a href="sms.html" class="list-group-item list-group-item-action">
+                            <span class="far fa-file-alt"></span>
+                            SMS
+                            <span class="badge float-right">12</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-9 col-lg-9">
+                    <!-- SMS AND EMAIL  -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <button class="btn btn-primary col-12 volaD" type="button" data-toggle="collapse"
+                                data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1"
+                                id="btnToggleDown">
+                                <h3 class="goCent">
+                                    About me <span class="fas fa-address-card"></span>
+                                </h3>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapseExample1">
+                        <div class="card card-body">
+                            <div class="panel panel-default emailSms">
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class=" col-sm-12 col-md-12 col-lg-12">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">Name <i class="fas fa-user-alt"></i></th>
+                                                        <td>Ebhohon Johnkelly</td>
+                                                        <td><a href="">Edit <i class="fas fa-user-edit"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Date of Birth <i
+                                                                class="fas fa-birthday-cake"></i></th>
+                                                        <td>3rd, September</td>
+                                                        <td><a href="">Edit <i class="fas fa-user-edit"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Wedding Anniversory <i
+                                                                class="fas fa-birthday-cake"></i></th>
+                                                        <td>15th, December</td>
+                                                        <td><a href="">Edit <i class="fas fa-user-edit"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Home Address <i class="fas fa-address-card"></i>
+                                                        </th>
+                                                        <td>1, Alhaji Street, Olasepe, Denro, Berger, Lagos.</td>
+                                                        <td><a href="">Edit <i class="fas fa-user-edit"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Occupation <i class="fas fa-user-md"></i></th>
+                                                        <td>Front and Back-end web developer</td>
+                                                        <td><a href="">Edit <i class="fas fa-user-edit"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Phone Number <i class="fas fa-phone-square"></i>
+                                                        </th>
+                                                        <td>+234-908-285-9600</td>
+                                                        <td><a href="">Edit <i class="fas fa-user-edit"></i></a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <script src=" https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+        <script>
+            ClassicEditor.create(document.querySelector('#form7')).catch(error => {
+                console.error(error);
+            });
+
+            ClassicEditor.create(document.querySelector('#form8')).catch(error => {
+                console.error(error);
+            });
+        </script>
 </body>
 
 </html>
