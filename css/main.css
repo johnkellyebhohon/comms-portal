@@ -8,11 +8,13 @@ body {
 }
 
 .form-signin {
-    border: 1px solid #e7e7e7;
+    border: 1px solid #fff;
     padding: 20px 20px 40px 20px;
     box-shadow: 0px 0px 2px #cdcde7;
 }
-
+.space{
+    margin-top: 20px;
+}
 
 .btnOnHome {
     margin-top: 20px;
@@ -24,7 +26,8 @@ body {
 }
 
 .nav-item .nav-link:hover {
-    color: rgb(170, 167, 167);
+    /* color: rgb(170, 167, 167); */
+    color: rgb(32, 171, 192);
 }
 
 
