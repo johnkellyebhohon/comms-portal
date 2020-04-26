@@ -12,6 +12,7 @@ body {
     padding: 20px 20px 40px;
     box-shadow: 0 0 2px #cdcde7;
 }
+
 .space {
     margin-top: 20px;
 }
@@ -68,8 +69,9 @@ body {
 .main2 {
     margin-bottom: 20px;
 }
+
 #collapseExample {
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 }
 
 .imgPhoto {
@@ -218,6 +220,7 @@ table tr {
     background: rgb(23, 162, 184);
     border: none;
 }
+
 table td p {
     margin-left: 4px;
 }
