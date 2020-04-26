@@ -66,13 +66,12 @@
 
         </div>
     </nav>
-    <header id="header">
-        <div class="space"></div>
-    </header>
+
     <section id="breadcrumb">
         <div class="container">
             <ol class="breadcrumb">
-                <li class="active">Dashboard</li>
+                <li><a href="admin.html">Profile</a></li>
+                <li class="active"></li>
             </ol>
         </div>
     </section>
@@ -94,28 +93,22 @@
                     <div class="list-group" id="mainColorhead">
                         <a href="#" class="list-group-item list-group-item-action active colorAm">
                             <Edit class="fas fa-cog" style="color:white">
-                                Dashboard
+                                Profile
 
                         </a>
                         <a href="myinfo.html" class="list-group-item list-group-item-action editProfile">
                             <span class="far fa-edit"></span>My Info
                         </a>
-                        <a href="emailadmin.html" class="list-group-item list-group-item-action">
+                        <a href="email.html" class="list-group-item list-group-item-action">
                             <span class="fas fa-envelope-square"></span>
                             Email
 
                             <span class="badge float-right">5</span>
                         </a>
-                        <a href="smsadmin.html" class="list-group-item list-group-item-action">
+                        <a href="sms.html" class="list-group-item list-group-item-action">
                             <span class="far fa-file-alt"></span>
                             SMS
                             <span class="badge float-right">12</span>
-                        </a>
-
-                        <a href="user.html" class="list-group-item list-group-item-action">
-                            <span class="fas fa-users"></span>
-                            Users
-                            <span class="badge float-right">13</span>
                         </a>
                     </div>
                 </div>
@@ -174,7 +167,7 @@
                                                             </div>
                                                             <div class="md-form">
                                                                 <i class="fas fa-pencil-alt prefix"></i>
-                                                                <textarea id="form7" class="md-textarea form-control"
+                                                                <textarea id="form30" class="md-textarea form-control"
                                                                     rows="5" placeholder="Email content"></textarea>
 
                                                             </div>
@@ -219,55 +212,10 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="panel panel-default boom23">
-                        <div class="panel-heading">
-                            <h3 class="panel-title text-center goCent">Stats</h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="container">
-                                <div class="row">
-                                    <div class=" col-sm-6 col-md-3 col-lg-3">
-                                        <div class="well wella">
-                                            <h3>
-                                                <span class="fas fa-user-alt"></span>
-                                                13</h3>
-                                            <h4>Users</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-3 col-lg-3">
-                                        <div class="well wella">
-                                            <h3>
-                                                <span class="far fa-thumbs-up"></span>
-                                                </span>
-                                                4</h3>
-                                            <h4>Approved</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-3 col-lg-3 ">
-                                        <div class="well wella">
-                                            <h3>
-                                                <span class="fas fa-sign-in-alt"></span>
-                                                4</h3>
-                                            <h4>Logins</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-3 col-lg-3 ">
-                                        <div class="well wella">
-                                            <h3>
-                                                <span class="fas fa-signal"></span>
-                                                1</h3>
-                                            <h4>Online</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-        </div>
+
 
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -280,7 +228,7 @@
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
         </script>
         <script>
-            ClassicEditor.create(document.querySelector('#form7')).catch(error => {
+            ClassicEditor.create(document.querySelector('#form30')).catch(error => {
                 console.error(error);
             });
 
